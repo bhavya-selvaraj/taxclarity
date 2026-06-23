@@ -83,8 +83,6 @@ Frontend Web Developer
 
 GitHub Pages Link:
 
-https://bhavya-selvaraj.github.io/tax-clarity/
-
 ## License
 
 This project is developed for educational, portfolio, and demonstration purposes.
