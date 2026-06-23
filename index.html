@@ -324,7 +324,7 @@
             margin: 10px;
             display: grid;
             align-items: center;
-            width:100%;
+            width: 100%;
         }
 
         .test {
@@ -421,7 +421,7 @@
             padding: 10px;
             border-radius: 10px;
             align-items: center;
-            width:30%;
+            width: 30%;
 
         }
 
@@ -486,7 +486,7 @@
         .box6 {
             padding: 5px;
             box-shadow: 0 0 5px;
-            width:100%;
+            width: 100%;
         }
 
         .box1:hover,
@@ -580,6 +580,21 @@
             box-sizing: border-box;
             font-size: 14px;
         }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 100%;
+        }
 
         @keyframes scroll {
             0% {
@@ -588,6 +603,122 @@
 
             100% {
                 transform: translateX(-100%);
+            }
+        }
+
+
+        @media screen and (max-width:768px) {
+
+            .topbar,
+            .navbar,
+            .register,
+            .about,
+            .table,
+            .footer {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .center {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .rightside,
+            .leftside,
+            .a,
+            .b,
+            .r,
+            .l,
+            .rs,
+            .ls {
+                width: 100%;
+            }
+
+            .box,
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .class1,
+            .class2,
+            .class3,
+            .class4,
+            .class5,
+            .class6,
+            .box1,
+            .box2,
+            .box3,
+            .box4,
+            .box5,
+            .box6 {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .class1 p,
+            .class2 p,
+            .class3 p,
+            .class4 p,
+            .class5 p,
+            .class6 p,
+            .box1 p,
+            .box2 p,
+            .box3 p,
+            .box4 p,
+            .box5 p,
+            .box6 p {
+                width: auto;
+            }
+
+            .monials {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .monials div {
+                width: 90%;
+                height: auto;
+            }
+
+            .r img {
+                width: 100%;
+                height: auto;
+            }
+
+            .left img {
+                width: 120px;
+            }
+
+            .rightside h1 {
+                font-size: 32px;
+            }
+
+            .a h1,
+            .services h1,
+            .clarity h1,
+            .test h1 {
+                font-size: 28px;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            td {
+                display: block;
+                width: 100%;
+            }
+
+            input,
+            select,
+            textarea {
+                width: 100%;
             }
         }
     </style>
