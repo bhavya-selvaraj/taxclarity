@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)file:///C:/Users/BHAVYA%20SELVARAJ/OneDrive/Desktop/tac%20clarity/tax.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Tax Clarity</title>
+
+    <link rel="stylesheet" href="./Tax Clarity_files/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .topbar p {
+            display: flex;
+            align-items: center;
+        }
+
+        .topbar img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .contact {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .green-icon {
+            color: lightblue;
+            font-size: 20px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ddd;
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+        }
+
+        .left img {
+            width: 150px;
+            height: auto;
+        }
+
+        .center {
+            display: flex;
+            gap: 25px;
+        }
+
+        .center a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            padding: 8px 15px;
+            transition: color 0.3s;
+        }
+
+        .center a:hover {
+            color: lightblue;
+        }
+
+        .center a:active {
+            color: lightblue;
+        }
+
+        .button {
+            background: lightblue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .send {
+            border: 1px solid lightblue;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 16px;
+            background-color: #fff;
+            margin-left: 10%;
+        }
+
+        .send:hover {
+            background-color: lightblue;
+        }
+
+        .button:hover {
+            text-decoration: underline;
+        }
+
+        .register {
+            background-color: lightblue;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            gap: 30px;
+        }
+
+        .table {
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .about {
+            background-color: linen;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .about p {
+            margin-bottom: 20px;
+        }
+
+        .rightside {
+            width: 48%;
+        }
+
+        .rs {
+            width: 48%;
+        }
+
+        .a {
+            width: 70%
+        }
+
+        .rightside h1 {
+            font-size: 48px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .a h1 {
+            font-size: 35px;
+        }
+
+        .rightside p {
+            font-size: 18px;
+            color: white;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .b p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        label {
+            line-height: 2;
+            margin-bottom: 2px;
+        }
+
+        .table label {
+            line-height: 2;
+            margin-bottom: 20px;
+        }
+
+        input {
+            margin-bottom: 20px;
+            width: 200px;
+        }
+
+        textarea {
+            width: 500px;
+        }
+
+        .table input {
+            margin-bottom: 20px;
+        }
+
+        .r {
+            width: 40%;
+        }
+
+        .r img {
+            height: 550px;
+            width: 800px;
+        }
+
+        .l {
+            width: 50%;
+            background-color: white;
+            color: #000;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .ls {
+            width: 45%;
+            margin: 0;
+        }
+
+        .leftside {
+            width: 45%;
+            background-color: white;
+            color: #000;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+
+        .b {
+            width: 45%;
+        }
+
+        .b img {
+            width: 350px;
+            height: 350px;
+        }
+
+        .leftside table {
+            width: 100%;
+        }
+
+        .l table {
+            width: 100%;
+        }
+
+        .leftside td {
+            padding: 10px 5px;
+        }
+
+        .l td {
+            padding: 10px 5px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            height: 38px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: lightblue;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+
+        }
+
+        .submit-btn:hover {
+            background-color: white;
+            color: #000;
+        }
+
+        .services h1 {
+            font-size: 35px;
+            text-align: center;
+        }
+
+        .services p {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 15px;
+            padding: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 50px;
+            padding: 10px;
+        }
+
+        .services {
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
+            display: grid;
+            align-items: center;
+
+        }
+
+        .clarity {
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
+            display: grid;
+            align-items: center;
+        }
+
+        .test {
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
+            align-items: center;
+            background-color: #000;
+            gap: 30px;
+            overflow: hidden;
+        }
+
+        .monials {
+            display: flex;
+            gap: 10px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            justify-content: space-between;
+        }
+
+        .monials:hover {
+            animation-play-state: paused;
+        }
+
+        .monials div {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            transition: 0.1s;
+        }
+
+        .monials div:hover {
+            transform: scale(1.05);
+        }
+
+        .div1 img,
+        .div2 img,
+        .div3 img {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+        }
+
+        .clarity h1 {
+            margin-top: 20px;
+        }
+
+        .class1 h1,
+        .class2 h1,
+        .class3 h1,
+        .class4 h1,
+        .class5 h1,
+        .class6 h1 {
+            height: 50px;
+            width: 300px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .test b {
+            font-size: 18px;
+        }
+
+        .test p {
+            font-size: 18px;
+        }
+
+        .test h1 {
+            color: white;
+        }
+
+        .box1 h1,
+        .box2 h1,
+        .box3 h1,
+        .box4 h1,
+        .box5 h1,
+        .box6 h1 {
+            height: 50px;
+            width: 300px;
+            padding: 2px;
+            text-align: center;
+
+        }
+
+
+        .class1,
+        .class2,
+        .class3,
+        .class4,
+        .class5,
+        .class6 {
+            box-shadow: 0 0 5px;
+            padding: 10px;
+            border-radius: 10px;
+            align-items: center;
+
+        }
+
+        .class1:hover,
+        .class2:hover,
+        .class3:hover,
+        .class4:hover,
+        .class5:hover,
+        .class6:hover {
+            background-color: lightblue;
+        }
+
+        .div1,
+        .div2,
+        .div3 {
+            padding: 10px;
+            border-radius: 10px;
+            align-items: center;
+            animation: scroll 10s linear infinite;
+            box-shadow: 0 0 5px;
+        }
+
+        .class1 p,
+        .class2 p,
+        .class3 p,
+        .class4 p,
+        .class5 p,
+        .class6 p {
+            padding: 1px;
+            width: 350px;
+        }
+
+        .div1 b,
+        .div2 b,
+        .div3 b {
+            padding: 1px;
+            width: 300px;
+        }
+
+        .div1 p,
+        .div2 p,
+        .div3 p {
+            padding: 1px;
+            width: 300px;
+        }
+
+        .box1 p,
+        .box2 p,
+        .box3 p,
+        .box4 p,
+        .box5 p,
+        .box6 p {
+            padding: 1px;
+            width: 350px;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6 {
+            padding: 5px;
+            box-shadow: 0 0 5px;
+        }
+
+        .box1:hover,
+        .box2:hover,
+        .box3:hover,
+        .box4:hover,
+        .box5:hover,
+        .box6:hover {
+            background-color: lightblue;
+        }
+
+        .box h1 {
+            font-size: 20px;
+        }
+
+        .box p {
+            font-size: 18px;
+        }
+
+        .container h1 {
+            font-size: 20px;
+        }
+
+        .container p {
+            font-size: 18px;
+        }
+
+        .box i {
+            width: 30px;
+            height: 30px;
+        }
+
+        .container i {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            font-size: 25px;
+            margin-top: 8px;
+        }
+
+        .test b {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .test p {
+            margin-bottom: 10px;
+        }
+
+        .table h6 {
+            font-size: 30px;
+            margin: 0;
+            margin-left: 20%;
+            margin-bottom: 10px;
+        }
+
+        .require p {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: gainsboro;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-right: 10px;
+        }
+
+        .footer img {
+            width: 30px;
+            height: 30px;
+            align-content: center;
+        }
+
+        .tax img {
+            width: 100px;
+            height: 40px;
+        }
+    
+        .l input {
+            width: 100%;
+            height: 38px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topbar">
+        <p><img src="./Tax Clarity_files/Screenshot 2026-06-15 104637.png">
+            800+ Client Case Studies Proving Our Results-driven Approach</p>
+        <div class="contact">
+            <i class="fa-solid fa-phone green-icon"></i>
+            <p>+91 97512 34124</p>
+            <i class="fa-solid fa-envelope green-icon"></i>
+            <p>taxclarity@outlook.com</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="navbar">
+        <div class="left">
+            <img src="./Tax Clarity_files/ChatGPT Image Jun 15, 2026, 11_30_17 AM.png" alt="Tax Clarity Logo">
+        </div>
+        <div class="center">
+            <a href="file:///C:/Users/BHAVYA%20SELVARAJ/OneDrive/Desktop/tac%20clarity/tax.html#">Home</a>
+            <a href="file:///C:/Users/BHAVYA%20SELVARAJ/OneDrive/Desktop/tac%20clarity/tax.html#">About</a>
+            <a href="file:///C:/Users/BHAVYA%20SELVARAJ/OneDrive/Desktop/tac%20clarity/tax.html#">Services</a>
+            <a href="file:///C:/Users/BHAVYA%20SELVARAJ/OneDrive/Desktop/tac%20clarity/tax.html#">Contact Us</a>
+        </div>
+        <div class="right">
+            <button class="button">Know More</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="register">
+        <div class="rightside">
+            <h1>SAVE YOUR TIME, TAX, MONEY</h1>
+            <p>All of your accounting solutions are in one destination! Get Professional Accountants, Income Tax
+                Consultants, GST registrations, Business Advisors, and more for Your Business.
+            </p>
+            <form>
+                <label> Your name </label><br>
+                <input type="text"><br>
+                <label> Your email </label><br>
+                <input type="email"><br>
+            </form>
+        </div>
+
+        <div class="leftside">
+            <form>
+                <table>
+                    <tbody><tr>
+                        <td><label>Name</label></td>
+                        <td><input type="text" id="name" placeholder="Enter your name"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Contact Number</label></td>
+                        <td><input type="tel" id="phone" placeholder="Enter your number"></td>
+                    </tr>
+                    <tr>
+                        <td><label>District</label></td>
+                        <td>
+                            <select id="district">
+                                <option>Ariyalur</option>
+                                <option>Chengalpattu</option>
+                                <option>Chennai</option>
+                                <option>Coimbatore</option>
+                                <option>Cuddalore</option>
+                                <option>Dharmapuri</option>
+                                <option>Dindigul</option>
+                                <option>Erode</option>
+                                <option>Kallakurichi</option>
+                                <option>Kanchipuram</option>
+                                <option>Kanyakumari</option>
+                                <option>Karur</option>
+                                <option>Krishnagiri</option>
+                                <option>Madurai</option>
+                                <option>Mayiladuthurai</option>
+                                <option>Nagapattinam</option>
+                                <option>Namakkal</option>
+                                <option>Nilgiris</option>
+                                <option>Perambalur</option>
+                                <option>Pudukkottai</option>
+                                <option>Ramanathapuram</option>
+                                <option>Ranipet</option>
+                                <option>Salem</option>
+                                <option>Sivaganga</option>
+                                <option>Tenkasi</option>
+                                <option>Thanjavur</option>
+                                <option>Theni</option>
+                                <option>Thoothukudi</option>
+                                <option>Tiruchirappalli</option>
+                                <option>Tirunelveli</option>
+                                <option>Tirupathur</option>
+                                <option>Tiruppur</option>
+                                <option>Tiruvallur</option>
+                                <option>Tiruvannamalai</option>
+                                <option>Tiruvarur</option>
+                                <option>Vellore</option>
+                                <option>Viluppuram</option>
+                                <option>Virudhunagar</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Email ID</label></td>
+                        <td><input type="email" id="email" placeholder="Enter your email"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Business</label></td>
+                        <td>
+                            <select id="business">
+                                <option>Agriculture</option>
+                                <option>Automobile</option>
+                                <option>Bakery</option>
+                                <option>Beauty Parlour</option>
+                                <option>Building &amp; Construction</option>
+                                <option>Clothing &amp; Garments</option>
+                                <option>Consultancy</option>
+                                <option>Dairy Farm</option>
+                                <option>Digital Marketing</option>
+                                <option>Education &amp; Training</option>
+                                <option>Electronics</option>
+                                <option>E-commerce</option>
+                                <option>Event Management</option>
+                                <option>Export &amp; Import</option>
+                                <option>Financial Services</option>
+                                <option>Food &amp; Beverage</option>
+                                <option>Freelancing</option>
+                                <option>Grocery Store</option>
+                                <option>Handicrafts</option>
+                                <option>Healthcare</option>
+                                <option>Hotel</option>
+                                <option>Information Technology (IT)</option>
+                                <option>Jewellery</option>
+                                <option>Logistics &amp; Transport</option>
+                                <option>Manufacturing</option>
+                                <option>Medical Shop</option>
+                                <option>Online Services</option>
+                                <option>Pharmacy</option>
+                                <option>Printing &amp; Publishing</option>
+                                <option>Real Estate</option>
+                                <option>Restaurant</option>
+                                <option>Retail Shop</option>
+                                <option>Software Development</option>
+                                <option>Textile</option>
+                                <option>Tourism &amp; Travel</option>
+                                <option>Trading</option>
+                                <option>Wholesale Business</option>
+                                <option>Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit" class="submit-btn">Register Now</button>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </form>
+        </div>
+    </div>
+    <div class="about">
+        <div class="a">
+            <h1> ABOUT US </h1>
+            <p>To ensure client happiness, we have separated our service offerings into Accounting, Company Law, Income
+                Tax, GST, and Auditing and Assurance Services. A qualified specialist is in charge of each section. We
+                have seven years of expertise providing a wide range of services to clients and enhancing their
+                experience.</p>
+            <p>Tax Clarity is a tax consulting company that offers comprehensive services in relation to audits,
+                bookkeeping/monthly accounting, GST, income tax, ESI/PF, and more.</p>
+        </div>
+        <div class="b">
+            <img src="./Tax Clarity_files/tax.jpg">
+        </div>
+    </div>
+    <div class="services">
+        <h1> OUR SERVICES</h1>
+        <p> One stop solution for all your tax and accounting queries</p>
+        <div class="box">
+            <div class="class1">
+                <center>
+                    <h1>
+                        <i class="fa-solid fa-calculator"></i>
+                        Accounting
+                    </h1>
+
+                    <p> Despite having a 1,000-year heritage, accounting is still very relevant today. We are providing
+                        accounting services for the past 7 years</p>
+                </center>
+            </div>
+            <div class="class2">
+                <center>
+                    <h1>
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                        Auditing &amp; Assurance
+                    </h1>
+                    <p>In order to ensure compliance with statutory and regulatory requirements, including disclosures,
+                        and
+                        to deliver helpful, value-added services, we interact with our clients continuously.</p>
+                </center>
+            </div>
+            <div class="class3">
+                <center>
+                    <h1>
+                        <i class="fa-solid fa-money-bill-wave"></i> 
+                        Income tax
+                    </h1>
+                    <p>We quickly take care of all of your income tax filing needs with our committed customer
+                        assistance.
+                    </p>
+                </center>
+            </div>
+            <div class="class4">
+                <center>
+                    <h1>
+                        <i class="fa-solid fa-receipt"></i>
+                        Goods &amp; Services Tax (Gst)
+                    </h1>
+                    <p>In India, the GST voyage started in 2017, and since then, it has significantly shaped our
+                        economy. We
+                        promise you a quick, easy procedure that meets all of your GST Registration needs. </p>
+                </center>
+            </div>
+            <div class="class5">
+                <center>
+                    <h1>
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        Company Law Matters Consultancy.
+                    </h1>
+                    <p>We offer seamless services in company law issues that can assist you in laying the foundation for
+                        a
+                        prosperous future.</p>
+                </center>
+            </div>
+            <div class="class6">
+                <center>
+                    <h1>
+                        <i class="fa-solid fa-rocket"></i> 
+                        Startup Services
+                    </h1>
+                    <p>Startup services in India require a lot of courage and tenacity, and we are here to support you
+                        by
+                        providing the appropriate financial guidance and a road plan.</p>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div class="clarity">
+        <h1>WHY TAX CLARITY?</h1>
+        <p>We constantly strive for your business success &amp; growth…</p>
+        <div class="container">
+            <div class="box1">
+                <i class="fa-solid fa-eye-slash"></i> 
+                <center>
+                    <h1>No Hidden Fees</h1>
+                    <p>We don't charge any hidden fees and all our prices are transparent</p>
+                </center>
+            </div>
+            <div class="box2">
+                <i class="fa-solid fa-user-tie"></i> 
+                <center>
+                    <h1>Experienced Tax Advisors</h1>
+                    <p>It's essential that businesses gain and maintain customer trust -- and that happens through
+                        customer
+                        transparency.</p>
+                </center>
+            </div>
+            <div class="box3">
+                <i class="fa-solid fa-star"></i>  
+                <center>
+                    <h1>4.9/5 Rating</h1>
+                    <p>Last year we were rated 4.9/5 by 80+ customers and we are happy to serve you</p>
+                </center>
+            </div>
+            <div class="box4">
+                <i class="fa-solid fa-clock"></i> 
+                <center>
+                    <h1>Timely ROC &amp; GST Filings</h1>
+                    <p>We do it quick &amp; easy for you to register your business under GST.</p>
+                </center>
+            </div>
+            <div class="box5">
+                <i class="fa-solid fa-chart-line"></i> 
+                <center>
+                    <h1>High End Business Consultation</h1>
+                    <p>Our tax consulting services are designed to meet all of a company's tax requirements.</p>
+                </center>
+            </div>
+            <div class="box6">
+                <i class="fa-solid fa-book"></i>  
+                <center>
+                    <h1>Simplified Accounting Services</h1>
+                    <p>We offer simplified tax bookkeeping services to help your company comply with tax requirements.
+                    </p>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div class="test">
+        <h1>TESTIMONIALS</h1>
+        <div class="monials">
+            <div class="div1">
+                <img src="./Tax Clarity_files/contact.png"><br>
+                <b> Nedunsezhiyan</b>
+                <p> Albaatroz</p>
+                <p>Since we have been working with Tax Clarity, they have been a tremendous assest to our copany. They
+                    have a great reputation for being a friendly, competant staff that responds quickly. </p>
+                <img src="./Tax Clarity_files/hangouts.png">
+            </div>
+            <div class="div2">
+                <img src="./Tax Clarity_files/contact.png"><br>
+                <b> Nitin Patel</b>
+                <center>
+                    <p> AK Ceramics</p>
+                </center>
+                <p>The Tax Clarity staff has impressed us with their professionalism, expertise, and friendliness. They
+                    did a great job of keeping us updated as the investigation developed and throughout the process.</p>
+                <img src="./Tax Clarity_files/hangouts.png">
+            </div>
+            <div class="div3">
+                <img src="./Tax Clarity_files/contact.png"><br>
+                <b>Mohan Raj</b>
+                <center>
+                    <p>Cheran Pharma</p>
+                </center>
+                <p>As our accountants and advisors, we hold Prabhu and tax Clarity guidance in high regard. They prepare
+                    our accounts, company and personal tax returns and the service is always excellent and timely.</p>
+                <img src="./Tax Clarity_files/hangouts.png">
+            </div>
+        </div>
+    </div>
+    <div class="table">
+        <div class="r">
+            <img src="./Tax Clarity_files/OIP.jpg">
+        </div>
+        <div class="l">
+            <h6>Your Details</h6>
+            <form>
+                <table>
+                    <tbody><tr>
+                        <td><label>Name</label></td>
+                        <td><input type="text" id="name" placeholder="Enter your name"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email</label></td>
+                        <td><input type="email" id="email" placeholder="Enter your email"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Phone</label></td>
+                        <td><input type="tel" id="phone" placeholder="Enter your phone number"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Message</label></td>
+                        <td colspan="2">
+                            <textarea id="text" rows="8" placeholder="Enter your message"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit" class="send">Send</button>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </form>
+        </div>
+    </div>
+    <div class="require">
+    </div>
+    <div class="footer">
+        <div class="rs">
+            <div class="tax"><img src="./Tax Clarity_files/Screenshot 2026-06-15 112056.png"></div>
+            <br>
+            <p><i class="fa-solid fa-phone icon" color="black"></i>   +91 97512 34124</p><br>
+            <p><i class="fa-solid fa-envelope icon"></i>  taxclarity@outlook.com</p><br>
+        </div>
+        <footer>
+            <div class="ls">
+                <iframe src="./Tax Clarity_files/maps.html" width="900px;" height="300px;" style="border:1px solid black;
+      border-radius: 30px;;" allowfullscreen="">
+                </iframe>
+            </div>
+        </footer>
+
+    </div>
+
+
+</body></html>
